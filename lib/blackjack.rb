@@ -3,7 +3,7 @@ def welcome
 end
 
 def deal_card
-  return 1 + rand(11)
+  card = 1 + rand(11)
 end
 
 def display_card_total(card_total)
@@ -12,11 +12,10 @@ end
 
 def prompt_user
   "Type 'h' to hit or 's' to stay"
-  gets.chomp
 end
 
 def get_user_input
-  gets
+  user_input = gets.chomp
 end
 
 def end_game(card_total)
